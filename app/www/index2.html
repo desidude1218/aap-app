@@ -7,6 +7,8 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="js/app.js" rel="javascript">
+
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -24,33 +26,28 @@
   <body ng-app="starter">
 
  <ion-pane>
- <!--HEADER-->  <div class="bar bar-header bar-assertive">
-    <h1 class="title">ENTER LOGIN DETAILS</h1>
+ <!--HEADER-->  <div class="bar bar-header bar-positive ">
+    <h1 class="title">LOG IN</h1>
  </div>
- <!--Footer--><div class="bar bar-footer bar-assertive">
-    <h1 class="title">Links</h1>
- </div>
+ <div class="bar bar-footer bar-positive">
+  <h1 class="title">Don't have account -- <a onClick="SignUpSubmit()">SIGN UP</a></h1>
+</div>
 <ion-content>
 <br><br><br>
-
-  <div class="card">
-  <div class="item item-text-wrap">
-    <div align=center><h2>LOGIN DETAILS:</h2></div><br>
-   <label class="item item-input">
-  <input type="text" placeholder="Enter E-MAIL ID:">
-  </label><br>
-<label class="item item-input">
-  <input type="password" placeholder="Enter Password:">
-  </label><br>
+<div class="list">
   <label class="item item-input">
-  <input type="password" placeholder="ReEnter Password:">
-  </label><br>
-  
-  </div>
-  </div>
+    <span class="input-label">Username</span>
+    <input type="text">
+  </label>
+  <label class="item item-input">
+    <span class="input-label">Password</span>
+    <input type="password">
+  </label>
+  <button class="button button-block  button-outline button-positive " >
+  CONTINUE 
+</button>
 </div>
-  
-<br><br>
+
 </ion-content>
   </ion-pane>
   </body>
